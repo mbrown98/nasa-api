@@ -1,3 +1,5 @@
+// One to one relationship between controllers and routers, but models could be used by many controllers and routers
+
 const planets = require("../../models/planets.model");
 
 function getAllPlanets(req, res) {
