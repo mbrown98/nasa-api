@@ -15,7 +15,20 @@ function isHabitablePlanet(planet) {
   );
 }
 
+// const promise = new Promise((resolve, reject) => {
+//   resolve(xyz);
+// });
+
+// promise.then((result) => {
+//   xyz;
+// });
+
+// OR;
+
+// const result = await promise;
+
 function loadPlanetsData() {
+  // return a promise
   return new Promise((resolve, reject) => {
     fs.createReadStream(
       path.join(__dirname, "..", "..", "data", "kepler_data.csv")
