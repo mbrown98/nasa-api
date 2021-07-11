@@ -1,0 +1,6 @@
+Terminal
+
+Package
+
+-- && run one wait for second
+--  & run both
