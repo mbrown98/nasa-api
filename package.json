@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-server":  "npm install --prefix server",
+    "install-server": "npm install --prefix server",
     "install-client": "npm install --prefix client",
     "install": "npm run install-server && npm run install-client",
-     "server": "npm run watch --prefix server",
+    "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
     "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server"
@@ -22,7 +22,8 @@
   "bugs": {
     "url": "https://github.com/mbrown98/nasa-api/issues"
   },
-  "homepage": "https://github.com/mbrown98/nasa-api#readme"
+  "homepage": "https://github.com/mbrown98/nasa-api#readme",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
 }
-
-
