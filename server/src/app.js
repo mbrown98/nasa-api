@@ -20,8 +20,8 @@ app.use(morgan("combined"));
 
 app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.use(planetsRouter);
-app.use(launchesRouter);
+app.use("/planets", planetsRouter);
+app.use("/launches", launchesRouter);
 
 // /* uses exact matching that is not used above
 app.get("/*", (req, res) => {
